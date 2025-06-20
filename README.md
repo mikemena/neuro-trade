@@ -58,3 +58,29 @@ These are derived from price and volume data to identify trends and momentum:
 - Dropout layers (0.2-0.3) to prevent overfitting
 - Dense layer for final prediction
 - Output layer (1 neuron for single price prediction)
+
+## Usage
+
+## Train New Model
+
+🏃 Train New Models
+`python predict_any_stock.py TSLA --train`
+`python predict_any_stock.py TSLA --train --timeframe 1day`
+`python predict_any_stock.py TSLA --train --timeframe 3day`
+`python predict_any_stock.py TSLA --train --timeframe 5day`
+`python predict_any_stock.py TSLA --train --timeframe 1week`
+`python predict_any_stock.py TSLA --train --timeframe 2week`
+`python predict_any_stock.py TSLA --train-all`
+
+### Run a Prediction
+
+🎯 Basic Prediction (1-day default)
+
+`python predict_any_stock.py TSLA`
+`python predict_any_stock.py TSLA --all-timeframes`
+
+📅 Specific Timeframes
+
+`python predict_any_stock.py TSLA --timeframe 5day`
+`python predict_any_stock.py AAPL --timeframe 1week`
+`python predict_any_stock.py NVDA --timeframe 1month`
